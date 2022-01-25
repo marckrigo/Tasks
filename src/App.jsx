@@ -4,10 +4,10 @@ import { v4 as uuidv4 } from 'uuid';
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import { toast } from 'react-toastify';
 
-import Tasks  from "./components/Tasks";
-import AddTask from "./components/AddTask";
-import Header from "./components/Header";
-import TaskDetail from "./components/TaskDetail";
+import Tasks  from "./components/Tasks/Tasks";
+import AddTask from "./components/AddTask/AddTask";
+import Header from "./components/Header/Header";
+import TaskDetail from "./components/TaskDetail/TaskDetail";
 
 import "./App.css";
 import 'react-toastify/dist/ReactToastify.css';
@@ -67,12 +67,12 @@ const App = () => {
     return (
         <Router>
             <div className="container">
-                <Header />
                 <Route 
                     path="/"
                     exact
                     render={() => (
                         <>
+                            <Header text="Tarefas"/>
                             <AddTask handleTaskAddition={handleTaskAddition} />
                             <Tasks 
                                 tasks={tasks} 

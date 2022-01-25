@@ -1,7 +1,8 @@
 import React from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 
-import Button from './Button';
+import Button from '../Button/Button';
+import Header from '../Header/Header';
 
 import './TaskDetail.css';
 
@@ -15,6 +16,7 @@ const TaskDetail = () => {
 
     return (
         <>
+            <Header text="Detalhe Tarefas" />
             <div className="back-button-container">
                 <Button onClick={handleBackButtonClick}>Voltar</Button>
             </div>

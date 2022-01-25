@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 
-import Button from "./Button";
+import Button from "../Button/Button";
 
 import "./AddTask.css";
 import 'react-toastify/dist/ReactToastify.css';

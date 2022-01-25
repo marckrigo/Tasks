@@ -1,6 +1,6 @@
 import React from "react";
 
-import Task from "./Task";
+import Task from "../Task/Task";
 
 const Tasks = ({tasks, handleTaskClick, handleTaskRemove}) => {
     return (
