@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './Header.css';
+import { HeaderContainer } from './styled';
 
 const Header = (props) => {
     return (
-        <h1 className='header-container'>{props.text}</h1>
+        <HeaderContainer>{props.text}</HeaderContainer>
     );
 }
  

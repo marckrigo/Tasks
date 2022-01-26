@@ -1,4 +1,6 @@
-.button {
+import styled from "styled-components";
+
+export const ButtonClass = styled.button`
     background-color: chartreuse;
     height: 40px;
     padding: 0 10px;
@@ -10,9 +12,9 @@
     cursor: pointer;
     border: none;
     transition: all 0.5s ease;
-}
 
-.button:hover{
-    background-color: #444;
-    color:chartreuse;
-}
+    &:hover {
+        background-color: #444;
+        color:chartreuse;
+    }
+`

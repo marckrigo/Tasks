@@ -1,4 +1,6 @@
-.task-details-container {
+import styled from "styled-components";
+
+export const TaskDetailsContainer = styled.div`
     background: #444;
     margin: 15px 0;
     padding: 15px 20px;
@@ -6,14 +8,14 @@
     flex-direction: column;
     color: #eee;
     border-radius: 5px;
-}
+`
 
-.task-details-container h2 {
+export const TaskDetailTitle = styled.h2`
     margin-bottom: 5px;
-    color: chartreuse;
-}
+    color: chartreuse;  
+`
 
-.back-button-container {
+export const BackButtonContainer = styled.div`
     width: 30%;
     margin-top: 10px;
-}
+`

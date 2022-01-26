@@ -3,8 +3,9 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import Button from "../Button/Button";
 
-import "./AddTask.css";
 import 'react-toastify/dist/ReactToastify.css';
+
+import { AddTaskContainer, AddTaskInput, AddTaskButtonContainer } from "./styled";
 
 const AddTask = ({handleTaskAddition}) => {
     const [inputData, setInputData] = useState("");
@@ -28,13 +29,13 @@ const AddTask = ({handleTaskAddition}) => {
     };
     
     return (
-        <div className="add-task-container">
-            <input onChange={handleInputChange} value={inputData} className="add-task-input" type="text" />
-            <div className="add-task-button-container">
-                <Button onClick={handleAddTaskClick}>Adicionar</Button>
-                <ToastContainer />
-            </div>
-        </div>
+        <AddTaskContainer>
+            <AddTaskInput onChange={handleInputChange} value={inputData} type="text" />
+                <AddTaskButtonContainer>
+                    <Button onClick={handleAddTaskClick}>Adicionar</Button>
+                    <ToastContainer />
+                </AddTaskButtonContainer>
+        </AddTaskContainer>
     );
 }
  
