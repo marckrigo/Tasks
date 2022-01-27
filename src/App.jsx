@@ -3,14 +3,14 @@ import axios from "axios";
 import { v4 as uuidv4 } from 'uuid';
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Tasks  from "./components/Tasks/Tasks";
 import AddTask from "./components/AddTask/AddTask";
 import Header from "./components/Header/Header";
 import TaskDetail from "./components/TaskDetail/TaskDetail";
 
-import "./App.css";
-import 'react-toastify/dist/ReactToastify.css';
+import { Container } from "./styled";
 
 const App = () => {
     const [tasks, setTasks] = useState([]);
@@ -66,7 +66,7 @@ const App = () => {
 
     return (
         <Router>
-            <div className="container">
+            <Container>
                 <Route 
                     path="/"
                     exact
@@ -84,7 +84,7 @@ const App = () => {
                 />
                 <Route path="/:taskTitle" exact component={TaskDetail}
                 />
-            </div>
+            </Container>
         </Router>
     );
 };
