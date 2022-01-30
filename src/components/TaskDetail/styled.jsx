@@ -12,7 +12,7 @@ export const TaskDetailsContainer = styled.div`
 
 export const TaskDetailTitle = styled.h2`
     margin-bottom: 5px;
-    color: chartreuse;  
+    color: #a7c6eb;  
 `
 
 export const BackButtonContainer = styled.div`

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ButtonClass = styled.button`
-    background-color: chartreuse;
+    background-color: #a7c6eb;
     height: 40px;
     padding: 0 10px;
     border-radius: 5px;
@@ -15,6 +15,6 @@ export const ButtonClass = styled.button`
 
     &:hover {
         background-color: #444;
-        color:chartreuse;
+        color:#a7c6eb;
     }
 `
