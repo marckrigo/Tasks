@@ -30,7 +30,7 @@ const AddTask = ({handleTaskAddition}) => {
     
     return (
         <AddTaskContainer>
-            <AddTaskInput onChange={handleInputChange} value={inputData} type="text" />
+            <AddTaskInput onChange={handleInputChange} value={inputData} type="text" placeholder="Digite o título da tarefa"/>
                 <AddTaskButtonContainer>
                     <Button onClick={handleAddTaskClick}>Adicionar</Button>
                     <ToastContainer />

@@ -16,7 +16,7 @@ const TaskDetail = () => {
 
     return (
         <>
-            <Header text="Detalhe Tarefa" />
+            <Header text="Detalhe da Tarefa" />
             <BackButtonContainer>
                 <Button onClick={handleBackButtonClick}>Voltar</Button>
             </BackButtonContainer>

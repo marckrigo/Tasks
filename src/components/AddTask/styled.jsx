@@ -12,8 +12,8 @@ export const AddTaskInput = styled.input`
     border-radius: 5px;
     border: none;
     flex: 2;
-    background-color: #444;
-    color: #eee;
+    background-color: #253341;
+    color: #fff;
     font-size: 16px;
 `
 
